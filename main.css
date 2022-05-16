@@ -4,13 +4,150 @@
 }
 
 :root {
-    --blue: hsl(246, 80%, 60%);
+    --name: hsl(246, 80%, 60%);
     --work: hsl(15, 100%, 70%);
     --play: hsl(195, 74%, 62%);
     --study: hsl(348, 100%, 68%);
     --exercise: hsl(145, 58%, 55%);
     --social: hsl(264, 64%, 52%);
     --selfcare: hsl(43, 84%, 65%);
+    --verydblue: hsl(226, 43%, 10%);
+    --dblue: hsl(235, 46%, 20%);
+    --hover: hsl(235, 45%, 61%);
+    --paleblue: hsl(236, 100%, 87%);
+}
+
+body {
+    background-color: var(--verydblue);
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    display: grid;
+    place-content: center;
+}
+
+.intro {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 10px auto;
+    background-color: var(--dblue);
+    border-radius: 20px;
+}
+
+.name {
+    background-color: var(--name);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 30px;
+    border-radius: 20px;
+}
+
+.name-image {
+    width: 40%;
+}
+
+img {
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.name-text {
+    width: 50%;
+}
+
+h1 {
+    font-size: 1.2em;
+    color: white;
+    font-weight: 300;
+}
+
+.name-text p {
+    color: white;
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+.time {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 15px;
+    color: var(--hover);
+    font-size: 0.9em;
+}
+
+.work, .play, .study, .exercise, .social, .self-care {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.text {
+    background-color: var(--dblue);
+}
+
+/** work **/
+
+.work {
+    background-image: url('images/icon-work.svg');
+    background-repeat: no-repeat;
+    background-color: var(--work);
+    border-radius: 20px;
+}
+
+/** play **/
+
+.play {
+    background-image: url('images/icon-play.svg');
+    background-repeat: no-repeat;
+    background-color: var(--play);
+    border-radius: 20px;
+}
+
+/** study **/
+
+.study {
+    background-image: url('images/icon-study.svg');
+    background-repeat: no-repeat;
+    background-color: var(--study);
+    border-radius: 20px;
+}
+
+/** exercise **/
+
+.exercise {
+    background-image: url('images/icon-exercise.svg');
+    background-repeat: no-repeat;
+    background-color: var(--exercise);
+    border-radius: 20px;
+}
+
+/** social **/
+
+.social {
+    background-image: url('images/icon-social.svg');
+    background-repeat: no-repeat;
+    background-color: var(--social);
+    border-radius: 20px;
+}
+
+/** self care **/
+
+.self-care {
+    background-image: url('images/icon-self-care.svg');
+    background-repeat: no-repeat;
+    background-color: var(--selfcare);
+    border-radius: 20px;
 }
 
 /** Footer **/
