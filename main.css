@@ -34,6 +34,12 @@ h3 {
     place-content: center;
 }
 
+.hide {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+}
+
 .intro {
     width: 90%;
     display: flex;
@@ -200,4 +206,33 @@ h1 {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+        grid-template-columns: 250px 250px 250px 250px;
+        grid-template-rows: 250px 250px;
+        margin: 100px auto;
+    }
+
+    .intro {
+        grid-row: 1 / span 2;
+    }
+
+    .name {
+        height: 60%;
+    }
+
+    .logo {
+        margin-left: 100px;
+        padding-left: 10px;
+        width: 50%;
+    }
+
+    .text {
+        height: 80%;
+    }
+
+
 }
