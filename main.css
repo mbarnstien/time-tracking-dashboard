@@ -20,6 +20,13 @@
 body {
     background-color: var(--verydblue);
     font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}
+
+h3 {
+    color: white;
+    font-weight: 300;
+    font-size: 1.7em;
 }
 
 .container {
@@ -53,7 +60,7 @@ body {
     width: 40%;
 }
 
-img {
+.name-image img {
     width: 50%;
     border: 2px solid white;
     border-radius: 50%;
@@ -64,7 +71,7 @@ img {
 }
 
 h1 {
-    font-size: 1.2em;
+    font-size: 1em;
     color: white;
     font-weight: 300;
 }
@@ -89,65 +96,101 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: row wrap;
     margin: 10px auto;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .text {
     background-color: var(--dblue);
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: -20px;
+}
+
+.title {
+    width: 85%;
+    margin: 15px auto 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo-container {
+    height: 60px;
+}
+
+.logo {
+    padding-left: 250px;
+    width: 20%;
+    margin-top: -10px;
+}
+
+.exercise .logo {
+    margin-top: 0;
+}
+
+.title h2 {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.title img {
+    height: 20%;
+}
+
+.daily, .weekly, .monthly {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+}
+
+
+.daily, .weekly, .monthly p {
+    color: var(--paleblue);
+    font-size: 0.8em;
 }
 
 /** work **/
 
 .work {
-    background-image: url('images/icon-work.svg');
-    background-repeat: no-repeat;
     background-color: var(--work);
-    border-radius: 20px;
+
 }
 
 /** play **/
 
 .play {
-    background-image: url('images/icon-play.svg');
-    background-repeat: no-repeat;
     background-color: var(--play);
-    border-radius: 20px;
 }
 
 /** study **/
 
 .study {
-    background-image: url('images/icon-study.svg');
-    background-repeat: no-repeat;
     background-color: var(--study);
-    border-radius: 20px;
 }
 
 /** exercise **/
 
 .exercise {
-    background-image: url('images/icon-exercise.svg');
-    background-repeat: no-repeat;
     background-color: var(--exercise);
-    border-radius: 20px;
 }
 
 /** social **/
 
 .social {
-    background-image: url('images/icon-social.svg');
-    background-repeat: no-repeat;
     background-color: var(--social);
-    border-radius: 20px;
 }
 
 /** self care **/
 
 .self-care {
-    background-image: url('images/icon-self-care.svg');
-    background-repeat: no-repeat;
     background-color: var(--selfcare);
-    border-radius: 20px;
 }
 
 /** Footer **/
