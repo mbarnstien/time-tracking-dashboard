@@ -222,6 +222,42 @@ h1 {
 
     .name {
         height: 60%;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .name-image {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .name-text p {
+        margin-top: 40px;
+    }
+
+    .name-text h1 {
+        font-size: 1.8em;
+    }
+
+    .time {
+        height: 30%;
+        flex-flow: column wrap;
+        padding: 5px 15px;
+    }
+
+    .title img {
+        height: 10%;
+    }
+
+    .daily, .weekly, .monthly {
+        width: 85%;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    
+    h3 {
+        font-size: 3em;
     }
 
     .logo {
@@ -231,7 +267,7 @@ h1 {
     }
 
     .text {
-        height: 80%;
+        height: 85%;
     }
 
 
