@@ -97,6 +97,10 @@ h1 {
     font-size: 0.9em;
 }
 
+.time p:hover {
+    color: white;
+}
+
 .work, .play, .study, .exercise, .social, .self-care {
     width: 90%;
     display: flex;
@@ -115,6 +119,10 @@ h1 {
     display: flex;
     flex-flow: row wrap;
     margin-top: -20px;
+}
+
+.text:hover {
+    background-color: var(--hover);
 }
 
 .title {
@@ -160,6 +168,10 @@ h1 {
 .daily, .weekly, .monthly p {
     color: var(--paleblue);
     font-size: 0.8em;
+}
+
+.white {
+    color: white;
 }
 
 /** work **/
